@@ -15,7 +15,7 @@ public class SingleThreadCrawler {
         SingleThreadCrawler crawler = new SingleThreadCrawler();
 
         long startTime = System.nanoTime();
-        String result = crawler.find("Java_(programming_language)", "Cat", 5, TimeUnit.MINUTES);
+        String result = crawler.find("Injury", "Equator", 5, TimeUnit.MINUTES);
         long finishTime = TimeUnit.SECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
 
         System.out.println("Took "+finishTime+" seconds, result is: " + result);
